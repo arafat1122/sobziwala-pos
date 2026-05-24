@@ -12,10 +12,7 @@ const serviceSchema = new mongoose.Schema({
     required: [true, 'Please provide a service description'],
     maxlength: [1000, 'Description cannot exceed 1000 characters']
   },
-  icon: {
-    type: String,
-    trim: true
-  },
+  icon: String,
   price: {
     type: Number,
     min: [0, 'Price cannot be negative']
